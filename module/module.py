@@ -74,7 +74,7 @@ class Logentries_Broker(BaseModule):
         while len(self.queue) > 0:
             data = self.queue.popleft()
             timestamp = datetime.datetime.fromtimestamp(time.getime()).strftime('%H:%M:%S %d-%m-%Y')
-            msg = json.dumps({"event": {'timestamp': timestamp, 'data': data}})
+            msg = json.dumps({"event": {'timestamp': timestamp, 'data': data['log']}})
             req = urllib2.Request(self.endpoint, msg)
             try:
                 urllib2.urlopen(req)
