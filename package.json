@@ -1,0 +1,25 @@
+{
+  "name": "logentries",
+  "types": ["module"],
+  "version": "1.0.",
+  "homepage": "https://github.com/StephenHynes7/mod-logentries",
+  "author": "Stephen Hynes",
+  "description": "Send your Shinken data to Logentries",
+  "contributors": [
+    {
+      "name": "Stephen Hynes",
+      "email": "sthynes8@gmail.com"
+    }
+  ],
+  "repository": "https://github.com/StephenHynes7/mod-logentries",
+  "keywords": [
+    "module",
+    "broker",
+    "logentries",
+    "analytics"
+  ],
+  "dependencies": {
+    "shinken": ">=2.0"
+  },
+  "license": "AGPL"
+}
