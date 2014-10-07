@@ -16,7 +16,8 @@
     "module",
     "broker",
     "logentries",
-    "analytics"
+    "analytics",
+    "log"
   ],
   "dependencies": {
     "shinken": ">=2.0"
