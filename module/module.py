@@ -61,7 +61,7 @@ class Logentries_Broker(BaseModule):
             if not self.is_uuid:
                 raise Exception
         self.endpoint = self.host + self.token
-        self.queue_size = getattr(modconf, 'queue_size', 100)
+        self.queue_size = getattr(modconf, 'queue_size', 10)
         self.queue = deque([])
 
     def init(self):
